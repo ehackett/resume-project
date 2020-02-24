@@ -1,5 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:99,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic|Exo:100,200,300,400,500,600,700");
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", Helvetica, sans-serif;
+}
+.main-heading {
+	display: flex;
+}
+
+#logo {
+	flex: 1;
+	background: url("../img/rosie.jpg") no-repeat center center / cover;
+	min-height: 360px;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+}
+
+.lg-col {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+
+	.head-name {
+		align-items: stretch;
+		min-height: 120px;
+		height: 33%;
+		background: rgb(83, 83, 83);
+		padding: 0.5rem 1rem;
+	}
 }
